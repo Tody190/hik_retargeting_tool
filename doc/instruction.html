@@ -1,0 +1,165 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:instruction</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h1 id="-">简介</h1>
+<p><img src="img\主界面.png" alt="主界面"></p>
+<ol>
+<li><p>映射模板切换</p>
+</li>
+<li><p>映射模板新建</p>
+</li>
+<li><p>映射模板删除</p>
+</li>
+<li><p>映射模板导入，文件名为模板名，格式 .HIKM</p>
+</li>
+<li><p>映射模板导出，文件名为模板名，格式 .HIKM</p>
+</li>
+<li><p>HumanIK 身体各部分结构分类标签</p>
+</li>
+<li><p>Maya节点模糊搜索关键字栏</p>
+</li>
+<li><p>模糊搜索按钮</p>
+</li>
+<li><p>Maya 节点展示按钮，显示搜索到的节点。鼠标停留显示节点类型以及所有父级结构，点击选中节点，并当前视图中导航的此节点</p>
+</li>
+<li><p>将当前节点映射到HumanIK对应结构按钮</p>
+</li>
+<li><p>HumanIK 对应的部分名称</p>
+</li>
+<li><p>选中maya一个组，点击获取此组下所有节点</p>
+</li>
+<li><p>输入名字创建一个 HumanIK 角色， 当角色存在时，选中这个角色</p>
+</li>
+<li><p>批量搜索</p>
+</li>
+<li><p>批量映射</p>
+</li>
+<li><p>打开此使用说明</p>
+</li>
+</ol>
+<h1 id="-">教程</h1>
+<h2 id="-">查找骨骼和控制器</h2>
+<p><img src="img\大纲.bmp" alt="大纲">
+工具在启动后，首先选中一个Maya大纲中的一个组,点击左下角的<img src="img\获取选中的组按钮.bmp" alt="获取选中的组按钮">，工具将获取此层级下所有节点，以备后续节点搜索功能使用。</p>
+<p><img src="img\选中组.bmp" alt="选中组"></p>
+<p>当节点获取成功时，按钮名将显示组名，并且工具所有匹配功能控件变为启用状态。</p>
+<p><img src="img\映射控件.bmp" alt="映射控件"></p>
+<p>匹配功能启用后，第一栏输入需要查找的骨骼或者控制器关键字，点击右侧<img src="img/向右.bmp" alt="向右">即可模糊查找节点，右侧按钮将显示与关键词最匹配的节点名。</p>
+<p>点击<img src="img/批量匹配.bmp" alt="批量匹配">可以执行批量查找。</p>
+<h2 id="-humanik">映射 HumanIK</h2>
+<p>在执行映射功能前，先创建HumanIK角色</p>
+<p>点击<img src="img/创建角色.bmp" alt="创建角色"></p>
+<p><img src="img/创建角色弹窗.bmp" alt="创建角色弹窗"></p>
+<p>输入角色名，点击确定或者回车键</p>
+<p><img src="img/创建角色成功.bmp" alt="img"></p>
+<p>创建成功后，HumanIK界面将自动索引到当前角色。</p>
+<p>如果输入角色名已存在，工具将直接所以到当前角色，不再另行创建。</p>
+<p><img src="img/映射骨骼.bmp" alt="映射骨骼"></p>
+<p>工具执行查找并找到对应节点后，点击 <img src="img/向右.bmp" alt="映射">按钮执行节点与骨骼的映射，可以从HumanIK图示中查看映射状态。</p>
+<p>点击 <img src="img/批量映射按钮.bmp" alt="批量映射按钮">可以执行批量映射功能</p>
+<h2 id="-">模板的创建删除与导入导出</h2>
+<p>本工具支持多套控制器命名和HumanIK角色映射</p>
+<p><img src="img\创建模板.bmp" alt="创建模板"></p>
+<p>点击新建模板输入模板名称</p>
+<p><img src="img\下拉菜单.bmp" alt="下拉菜单"></p>
+<p>创建成功后下拉菜单选择不同的映射模板</p>
+<p>本工具也支持模板的导入导出</p>
+<p><img src="img\导入映射.bmp" alt="导入映射"></p>
+<p>点击导入按钮，可以将导出的 HIKM 文件导入映射表</p>
+<p><img src="img\导出.bmp" alt="导出"></p>
+<p>点击导出按钮可以将当前映射信息导出</p>
+<h2 id="-">节点的操作</h2>
+<p><img src="img/节点提示.bmp" alt="节点提示"></p>
+<p>当查到节点，鼠标在节点上短暂停留，会显示这个节点的节点类型，以及节点所在层级</p>
+<p><img src="img/点选节点.bmp" alt="点选节点"></p>
+<p>点击节点按钮，此节点会在Maya中选中，maya视图也将导航到节点所在位置</p>
+<p>工具使用不同颜色区分不同的节点类型</p>
+<p><img src="img/蓝色节点.bmp" alt="蓝色节点">           蓝色  曲线控制器</p>
+<p><img src="img/骨骼节点.bmp" alt="骨骼节点">                紫色  Maya骨骼</p>
+<p><img src="img/灰色.bmp" alt="灰色">    灰色  其它类型节点</p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
