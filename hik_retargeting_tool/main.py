@@ -462,7 +462,7 @@ class Response(ui.MainUI):
 
 
 @ui.handle_error_dialog
-def load_ui():
+def show():
     """
 
     Returns:
