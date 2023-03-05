@@ -91,4 +91,4 @@ HIK_CODES_SORT = {
 }
 
 FILE_EXT = ".HIKM"
-INSTRUCTION_FILE = os.path.join(os.path.dirname(__file__), "doc\\instruction.html")
+INSTRUCTION_FILE = os.path.join(os.path.dirname(__file__), "../doc/instruction.html")

@@ -3,14 +3,13 @@
 # time: 2021/04/09
 import os.path
 import json
-import pprint
 
-from .lib.fuzzywuzzy import fuzz
+from lib.fuzzywuzzy import fuzz
 
-from . import ui
-from . import maya_util
-from . import maya_hik
-from . import config
+import ui
+import maya_util
+import maya_hik
+import config
 
 
 class Response(ui.MainUI):

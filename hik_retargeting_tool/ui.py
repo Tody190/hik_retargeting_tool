@@ -10,8 +10,7 @@ from PySide2 import QtCore
 from shiboken2 import wrapInstance
 import maya.OpenMayaUI as omui
 
-from . import config
-
+import config
 
 
 
